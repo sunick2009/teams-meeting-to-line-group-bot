@@ -1,0 +1,3 @@
+line-bot-sdk>=3.5
+flask
+python-dotenv
