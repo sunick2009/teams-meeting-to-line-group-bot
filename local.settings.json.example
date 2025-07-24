@@ -1,0 +1,20 @@
+# Azure Functions 環境變數設定範例
+# 複製這個檔案為 local.settings.json 並填入實際值
+
+{
+  "IsEncrypted": false,
+  "Values": {
+    "AzureWebJobsStorage": "",
+    "FUNCTIONS_WORKER_RUNTIME": "python",
+    "LINE_ACCESS_TOKEN": "你的_LINE_ACCESS_TOKEN",
+    "LINE_CHANNEL_SECRET": "你的_LINE_CHANNEL_SECRET",
+    "TARGET_ID": "你的_LINE_群組或用戶ID",
+    "FLOW_VERIFY_TOKEN": "你的_FLOW_VERIFY_TOKEN",
+    "OPENAI_API_KEY": "你的_OPENAI_API_KEY",
+    "OPENAI_MODEL": "gpt-4.1"
+  },
+  "Host": {
+    "LocalHttpPort": 7071,
+    "CORS": "*"
+  }
+}

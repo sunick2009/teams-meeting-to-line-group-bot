@@ -1,10 +1,12 @@
-flask>=2.0
-python-dotenv>=1.0
-openai>=1.0
-line-bot-sdk>=3.5
-beautifulsoup4>=4.0
-azure-functions>=1.11.0
-azure-functions-worker>=1.0.0
+# Azure Functions Core
+azure-functions>=1.18.0
 
-# 開發和測試依賴（可選）
+# Application Dependencies
+beautifulsoup4>=4.12.0
+line-bot-sdk>=3.5.0
+openai>=1.0.0
+
+# Optional: Local development and testing
+flask>=2.0.0
+python-dotenv>=1.0.0
 pytest>=7.0.0

@@ -1,0 +1,20 @@
+# .funcignore - 指定不要部署到 Azure Functions 的檔案
+.git/
+.vscode/
+.env
+.env.local
+.env.development
+.env.test
+.env.production
+local.settings.json
+test_*.py
+debug_env.py
+*.md
+.gitignore
+.funcignore
+venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.coverage
+*.log
