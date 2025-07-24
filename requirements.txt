@@ -2,3 +2,9 @@ flask>=2.0
 python-dotenv>=1.0
 openai>=1.0
 line-bot-sdk>=3.5
+beautifulsoup4>=4.0
+azure-functions>=1.11.0
+azure-functions-worker>=1.0.0
+
+# 開發和測試依賴（可選）
+pytest>=7.0.0
