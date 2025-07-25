@@ -34,10 +34,9 @@ jobs:
           python -m venv venv
           source venv/bin/activate
 
-      - name: Install dependencies to .python_packages
+      - name: Install dependencies
         run: |
           source venv/bin/activate
-          # Install dependencies to the Azure Functions required path
           pip install --target="./.python_packages/lib/site-packages" -r requirements.txt
           
       - name: Clean up unnecessary files
@@ -52,9 +51,7 @@ jobs:
       # Optional: Add step to run tests here
 
       - name: Zip artifact for deployment
-        run: |
-          # Create deployment package including .python_packages
-          zip -r release.zip . -x "venv/*" "*.git*" "__pycache__/*" "*.pyc"
+        run: zip -r release.zip . -x "venv/*" "*.git*" "__pycache__/*" "*.pyc"
 
       - name: Upload artifact for deployment job
         uses: actions/upload-artifact@v4
@@ -83,9 +80,9 @@ jobs:
       - name: Login to Azure
         uses: azure/login@v2
         with:
-          client-id: ${{ secrets.AZUREAPPSERVICE_CLIENTID_62A5B786DA1A4359BC239A084DB6817A }}
-          tenant-id: ${{ secrets.AZUREAPPSERVICE_TENANTID_C26FB2D904844129B6E46BE6A7ECE35F }}
-          subscription-id: ${{ secrets.AZUREAPPSERVICE_SUBSCRIPTIONID_3B4AC6AB9EE94721B9C2D3A964870944 }}
+          client-id: ${{ secrets.AZUREAPPSERVICE_CLIENTID_EB507E4F89A24D269F53A520CE0AA09F }}
+          tenant-id: ${{ secrets.AZUREAPPSERVICE_TENANTID_A4E037DD66D64F4D9153EDAAC34268C7 }}
+          subscription-id: ${{ secrets.AZUREAPPSERVICE_SUBSCRIPTIONID_09D713975D134EABB93E7FEB645C3776 }}
 
       - name: 'Deploy to Azure Functions'
         uses: Azure/functions-action@v1
@@ -96,12 +93,4 @@ jobs:
           package: ${{ env.AZURE_FUNCTIONAPP_PACKAGE_PATH }}
           scm-do-build-during-deployment: true
           enable-oryx-build: true
-
-      - name: 'Verify Deployment'
-        run: |
-          # Wait for deployment to complete
-          sleep 30
-          # Verify the health endpoint
-          curl -f https://yzuimsc-linebot.azurewebsites.net/api/health || exit 1
-          echo "✅ Deployment verification successful"
           

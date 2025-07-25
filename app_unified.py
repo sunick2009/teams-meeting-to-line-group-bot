@@ -182,13 +182,17 @@ class TranslationBotHandler:
             system_prompt = (
                 "You are a professional translator. Translate the provided text from "
                 "Traditional Chinese into natural, fluent English. Preserve names and "
-                "technical terms. Return only the translation without additional commentary."
+                "technical terms. Return only the translation without additional commentary. "
+                "IMPORTANT: Do NOT translate or modify URLs, hyperlinks, or web addresses. "
+                "Keep all URLs exactly as they are in the original text."
             )
         else:
             system_prompt = (
                 "You are a professional translator. Translate the provided text from "
                 "English into natural, fluent Traditional Chinese. Preserve names and "
-                "technical terms. Return only the translation without additional commentary."
+                "technical terms. Return only the translation without additional commentary. "
+                "IMPORTANT: Do NOT translate or modify URLs, hyperlinks, or web addresses. "
+                "Keep all URLs exactly as they are in the original text."
             )
 
         try:
