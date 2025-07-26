@@ -1,7 +1,8 @@
 # Byte-compiled / optimized / DLL files
 __pycache__/
-*.py[codz]
+*.py[cod]
 *$py.class
+*.pyc
 
 # C extensions
 *.so
@@ -25,6 +26,32 @@ share/python-wheels/
 .installed.cfg
 *.egg
 MANIFEST
+
+# Azure Functions
+bin/
+obj/
+.azure/
+
+# Environment variables
+.env
+local.settings.json
+*.log
+
+# IDE
+.vscode/settings.json
+.idea/
+*.swp
+*.swo
+
+# Testing
+test_results.json
+webhook_logs.json
+*.test.json
+
+# Temporary files
+*.tmp
+*.bak
+*.backup
 
 # PyInstaller
 #  Usually these files are written by a python script from a template

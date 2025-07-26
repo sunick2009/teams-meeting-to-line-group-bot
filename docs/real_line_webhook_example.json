@@ -1,0 +1,26 @@
+{
+  "destination": "Ub674ca6348e71cb0f83d207f5c47862d",
+  "events": [
+    {
+      "type": "message",
+      "message": {
+        "type": "text",
+        "id": "571554379032428596",
+        "quoteToken": "i8_gUh4s7dcDqInYCI4xF8T0iO90ZdiwBfZ61cKbI03zNY18muYV99Qn57VuqDC_mchws-_4-10fGxuRRB491pXsAbvD0GSt-3uCdXUrteoTZ1cO-RMDMTBx2A6oFZsqj3p3O64siZCz4foTlOAahw",
+        "text": "新增翻譯機器人功能，實作即時翻譯中英文訊息"
+      },
+      "webhookEventId": "01K12FZ9PADTV4XWXH9BWT7D99",
+      "deliveryContext": {
+        "isRedelivery": false
+      },
+      "timestamp": 1753504261329,
+      "source": {
+        "type": "group",
+        "groupId": "Cac46406dff58a905c3887258a8f30c7a",
+        "userId": "U8466cce1687cc9a24d7c66de1a93bfa5"
+      },
+      "replyToken": "770760f4352a4961b2ef9f07beaac54c",
+      "mode": "active"
+    }
+  ]
+}

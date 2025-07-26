@@ -1,0 +1,35 @@
+{
+  "basic_meeting": {
+    "attachments": [
+      {
+        "name": "週會 - 產品開發進度討論",
+        "content": "{\"meetingJoinUrl\": \"https://teams.microsoft.com/l/meetup-join/19%3ameeting_test123456\"}"
+      }
+    ],
+    "body": {
+      "content": "<p>會議時間: 2025-01-26 14:00</p><p>議程: 討論本週開發進度與下週計劃</p>"
+    }
+  },
+  "meeting_with_agenda": {
+    "attachments": [
+      {
+        "name": "技術架構評估會議",
+        "content": "{\"meetingJoinUrl\": \"https://teams.microsoft.com/l/meetup-join/19%3ameeting_tech_review\"}"
+      }
+    ],
+    "body": {
+      "content": "<div><h3>會議時間: 2025-01-27 10:30</h3><ul><li>現有架構檢討</li><li>新技術評估</li><li>實施計劃討論</li></ul></div>"
+    }
+  },
+  "urgent_meeting": {
+    "attachments": [
+      {
+        "name": "緊急會議 - 系統問題處理",
+        "content": "{\"meetingJoinUrl\": \"https://teams.microsoft.com/l/meetup-join/19%3ameeting_urgent_fix\"}"
+      }
+    ],
+    "body": {
+      "content": "<p style='color: red;'>緊急會議</p><p>會議時間: 2025-01-26 16:00</p><p>主題: 生產環境問題緊急處理</p>"
+    }
+  }
+}

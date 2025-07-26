@@ -8,7 +8,9 @@
     "TARGET_ID": "你的_LINE_群組或用戶ID",
     "FLOW_VERIFY_TOKEN": "你的_FLOW_VERIFY_TOKEN",
     "OPENAI_API_KEY": "你的_OPENAI_API_KEY",
-    "OPENAI_MODEL": "gpt-4o"
+    "OPENAI_MODEL": "gpt-4.1",
+    "LINE_TEST_MODE": "true",
+    "LINE_SKIP_SIGNATURE": "true"
   },
   "Host": {
     "LocalHttpPort": 7071,

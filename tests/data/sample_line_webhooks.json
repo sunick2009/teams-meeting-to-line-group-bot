@@ -1,0 +1,90 @@
+{
+  "text_message": {
+    "events": [
+      {
+        "type": "message",
+        "replyToken": "test_reply_token_12345",
+        "source": {
+          "type": "user",
+          "userId": "test_user_id_12345"
+        },
+        "message": {
+          "type": "text",
+          "text": "Hello, please translate this message"
+        }
+      }
+    ]
+  },
+  "chinese_message": {
+    "events": [
+      {
+        "type": "message", 
+        "replyToken": "test_reply_token_chinese",
+        "source": {
+          "type": "group",
+          "groupId": "test_group_id_12345"
+        },
+        "message": {
+          "type": "text",
+          "text": "請幫我翻譯這段中文訊息到英文"
+        }
+      }
+    ]
+  },
+  "message_with_url": {
+    "events": [
+      {
+        "type": "message",
+        "replyToken": "test_reply_token_url",
+        "source": {
+          "type": "user", 
+          "userId": "test_user_url"
+        },
+        "message": {
+          "type": "text",
+          "text": "請查看這個連結的內容並翻譯 https://example.com/article/tech-news 很重要的消息"
+        }
+      }
+    ]
+  },
+  "follow_event": {
+    "events": [
+      {
+        "type": "follow",
+        "replyToken": "test_reply_token_follow",
+        "source": {
+          "type": "user",
+          "userId": "new_user_id_12345"
+        }
+      }
+    ]
+  },
+  "multiple_events": {
+    "events": [
+      {
+        "type": "message",
+        "replyToken": "test_reply_token_1",
+        "source": {
+          "type": "user",
+          "userId": "user_1"
+        },
+        "message": {
+          "type": "text",
+          "text": "First message"
+        }
+      },
+      {
+        "type": "message",
+        "replyToken": "test_reply_token_2", 
+        "source": {
+          "type": "user",
+          "userId": "user_2"
+        },
+        "message": {
+          "type": "text",
+          "text": "Second message"
+        }
+      }
+    ]
+  }
+}
